@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e8e8">
+  <title>Neila — Birthday Invitation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">N<span>.</span></a>
+    <nav>
+      <a href="#invitation">Приглашение</a>
+      <a href="#details">Детали</a>
+      <a href="#rsvp">Ответить</a>
+    </nav>
+    <button id="musicToggle" class="music-button" aria-pressed="false">
+      ♫ <span id="musicLabel">Включить музыку</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="flower f1">✿</div>
+      <div class="flower f2">✽</div>
+      <div class="hero-copy">
+        <p class="eyebrow">✧ A LITTLE CELEBRATION ✧</p>
+        <p class="script">you are invited to</p>
+        <h1>Neila’s<br><em>Birthday</em></h1>
+        <p class="date">05　·　09　·　2027</p>
+        <p class="note">An evening of lovely things, warm light<br>
+          and people I’m happy to have around.</p>
+        <a class="button" href="#invitation">
+          Открыть приглашение <span>↗</span>
+        </a>
+      </div>
+      <div class="stamp">save<strong>the<br>date</strong>♡</div>
+      <p class="caption">ASTANA · KAZAKHSTAN</p>
+    </section>
+
+    <section class="section invitation" id="invitation">
+      <p class="section-mark">01 / THE INVITATION</p>
+      <div class="two-col">
+        <div class="art">
+          <div class="oval">
+            <span class="bouquet">✿ ❀ ✽</span>
+            <span class="art-script">a day<br>to remember</span>
+            <span class="art-date">SEPTEMBER · 05</span>
+          </div>
+          <span class="star">✧</span>
+        </div>
+        <div>
+          <p class="script">dear you,</p>
+          <h2>Let’s make<br>some <em>memories.</em></h2>
+          <p class="body-copy">
+            Another trip around the sun deserves a beautiful
+            little celebration. I’d love to spend this evening
+            with you — with good food, pretty outfits, lots of
+            laughs and a few moments worth keeping.
+          </p>
+          <p class="body-copy">
+            Your presence would make my day feel even more special.
+          </p>
+          <p class="signature">With love, <span>Neila ♡</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details" id="details">
+      <p class="section-mark">02 / THE DETAILS</p>
+      <p class="script">mark your calendar</p>
+      <h2>A little date<br>with <em>magic.</em></h2>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-icon">✧</span>
+          <p class="label">WHEN</p>
+          <h3>Sunday</h3>
+          <p>September 5, 2027</p>
+          <p class="muted">6:00 PM · tentative time</p>
+        </article>
+
+        <article class="card featured">
+          <span class="card-icon">⌖</span>
+          <p class="label">WHERE</p>
+          <h3>Selfie</h3>
+          <p>Restaurant &amp; Bar</p>
+          <p class="muted">The Ritz-Carlton, 18th floor</p>
+          <a class="text-link"
+             href="https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/dining/"
+             target="_blank" rel="noopener">
+            Explore the restaurant ↗
+          </a>
+        </article>
+
+        <article class="card">
+          <span class="card-icon">♡</span>
+          <p class="label">DRESS CODE</p>
+          <h3>Romantic</h3>
+          <p>Soft glam &amp; your favourite look</p>
+          <p class="muted">Dress up, feel lovely.</p>
+        </article>
+      </div>
+
+      <p class="fine-print">
+        * Restaurant and time are suggested for this invitation concept.
+        Reservation is not confirmed.
+      </p>
+      <a class="button outline"
+         href="https://www.google.com/maps/search/?api=1&query=Selfie+Restaurant+The+Ritz-Carlton+Astana"
+         target="_blank" rel="noopener">
+        Посмотреть на карте ↗
+      </a>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <p class="section-mark">03 / RSVP</p>
+      <p class="script">save me a little seat for you</p>
+      <h2>Will you<br><em>be there?</em></h2>
+      <p class="note">
+        Let me know if you can make it.<br>
+        I’m already looking forward to seeing you ♡
+      </p>
+
+      <form id="rsvpForm">
+        <label for="guestName">Your name</label>
+        <input id="guestName" required placeholder="Write your name…">
+
+        <label for="attendance">Will you join?</label>
+        <select id="attendance" required>
+          <option value="" disabled selected>Choose your answer</option>
+          <option value="yes">Yes, count me in! ♡</option>
+          <option value="no">Sadly, I can’t make it</option>
+          <option value="maybe">Not sure yet</option>
+        </select>
+
+        <button class="button" type="submit">Отправить ответ ♡</button>
+      </form>
+
+      <p id="formMessage" class="form-message" role="status"></p>
+      <p class="tiny-note">
+        Demo invitation: your answer appears here, but is not sent to Neila.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home">N<span>.</span></a>
+    <p>Made with love for a very special day.</p>
+    <button id="backToTop" class="back-top">Back to top ↑</button>
+  </footer>
+</body>
+</html>
